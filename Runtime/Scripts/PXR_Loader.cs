@@ -614,7 +614,7 @@ namespace Unity.XR.PXR
         }
 #endif
 
-#if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR && BUILD_PICO
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
         static void RuntimeLoadPicoPlugin()
         {
